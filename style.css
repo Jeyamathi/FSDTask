@@ -425,7 +425,7 @@ p {
   height: 100vh;
 }
 
-.exclusive-deals-card, .vacation-plan-card, .page6-card {
+.exclusive-deals-card, .page6-card {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -434,7 +434,7 @@ p {
   padding: 10%;
 }
 
-.exclusive-deals-card1, .vacation-plan-card1, .page6-card1 {
+.exclusive-deals-card1, .page6-card1 {
   display: flex;
   flex-direction: column;
   width: 60vw;
@@ -445,7 +445,63 @@ p {
   overflow: hidden;
 }
 
-.exclusive-deals-card1-upper-content, .vacation-plan-card1-upper-content {
+.vacation-plan-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 80vw;
+  height: 40vh;
+  padding: 15%;
+}
+
+.vacation-plan-card1 {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  height: 20rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 1% 1% 1% 1%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.vacation-plan {
+  position: relative;
+  background-color: #FEFCFB;
+}
+
+.vacation-plan-decoration-left {
+    position: absolute;
+    top: 5vw;
+    right: 60vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vacation-plan-btn {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    position: absolute;
+    top: 15vw;
+    right: 55vh;
+  }
+
+  .vacation-plan-card1-upper-content, .vacation-plan-card1-bottom-content {
+    display: flex;
+    align-items: center;
+    gap: 45%;
+    height: 0em;
+    margin-top: 15%;
+  }
+
+  .vacation-plan-card1-bottom-content-left > p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color: #666666;
+  }
+
+.exclusive-deals-card1-upper-content {
   display: flex;
   align-items: center;
   gap: 60%;
@@ -453,7 +509,7 @@ p {
   margin-top: 5%;
 }
 
-.exclusive-deals-card1-bottom-content, .vacation-plan-card1-bottom-content {
+.exclusive-deals-card1-bottom-content {
   display: flex;
   align-items: center;
   gap: 50%;
@@ -589,8 +645,9 @@ p {
   align-items: center;
   text-align: center;
   width: 100vw;
-  height: 100vh;
   gap: 10%;
+  min-height: 75vh;
+  flex-wrap: nowrap;
 }
 
 .page5-text{
@@ -677,6 +734,7 @@ p {
   width: 50vw;
   height: 50vh;
   background-color: #FA7436;
+  margin-top: 10%;
 }
 
 .footer-text > h1 {
@@ -763,7 +821,9 @@ p {
   justify-content: center;
   align-items: center;
   text-align: left;
-  gap: 30%;
+  gap: 20%;
+  width: 100%;
+  padding: 20px;
 }
 
 .footer-left {
@@ -772,6 +832,7 @@ p {
   align-items: left;
   flex-direction: column;
   text-align: left;
+  width: 15%;
 }
 
 .footer-right{
@@ -780,6 +841,7 @@ p {
   align-items: center;
   text-align: left;
   gap: 20%;
+  width: 25%;
 }
 
 .footer-right1 {
@@ -796,4 +858,13 @@ p {
   margin: 0;
   text-align: left;
   font-size: 0.8em;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 10vh;
 }
